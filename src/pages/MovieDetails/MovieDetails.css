@@ -1,0 +1,137 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+  --navvar: #010409;
+  --bodyvar: black;
+  --loadingvar: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #424242; */
+  overflow-x: hidden;
+}
+
+.movie-detail-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #424242;
+}
+
+.loading {
+  width: 80%;
+  max-width: 500px;
+  height: 45vh;
+  color: var(--loadingvar);
+  margin: 20vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+}
+
+.selected-movie-info {
+  background-color: var(--bodyvar);
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 1px 5px 45px var(--bodyvar);
+  max-width: 1100px;
+}
+
+.selected-movie-info img {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.imag.fullscreen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
+}
+
+.textinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.heading{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textinfo p {
+  margin: .5rem;
+  /* font-size: 1.25rem; */
+}
+
+.subheading{
+  display: flex;
+  font-family:'Times New Roman', Times, serif;
+  font-size: small;
+}
+
+.textinfo h1 {
+  margin: .5rem;
+}
+
+.add-to-playlist {
+  width: 20rem;
+  background-color: blue;
+  border-radius: 4px;
+  padding: 10px;
+  border: 3px solid yellow;
+  border-radius: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin: .5rem;
+}
+
+.add-to-playlist:hover{
+  background-color: rgb(86, 86, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .selected-movie-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px;
+    padding: 10px 0;
+  }
+
+  .textinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .loading {
+    font-size: 30px;
+  }
+}

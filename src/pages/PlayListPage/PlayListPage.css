@@ -1,0 +1,34 @@
+  .playlist-page {
+    /* width: 100vw; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .playlist-section {
+    margin-bottom: 20px;
+  }
+
+  .playlist-public{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .movie-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .movie {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .icons{
+    z-index: 2;
+  }

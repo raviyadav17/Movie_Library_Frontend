@@ -1,0 +1,13 @@
+.error-wrap{
+    min-height: 100vh;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+}
+
+.error-404{
+    font-size: 2rem;
+}

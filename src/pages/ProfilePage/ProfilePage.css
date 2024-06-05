@@ -1,0 +1,19 @@
+.profile-wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #424242;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70vh;
+    margin: 60px auto;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+}

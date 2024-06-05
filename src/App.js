@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import NavigationBar from "./components/Navbar/Navbar";
+import SignInPage from "./pages/SignInPage/SignInPage";
+import SignUpPage from "./pages/SignUpPage/SignUpPage";
+import HomePage from "./pages/HomePage/HomePage";
+import PlayListPage from "./pages/PlayListPage/PlayListPage";
+import MovieDetails from "./pages/MovieDetails/MovieDetails";
+import ProfilePage from "./pages/ProfilePage/ProfilePage"
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import PublicPlaylistPage from "./pages/PublicPlaylistPage/PublicPlaylistPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/playlist" element={<PlayListPage />} />
+        <Route path="/profile" element={<ProfilePage/>}/>
+        <Route path="/movie/:title" element={<MovieDetails />} />
+        <Route path="/public-playlist/:userId" element={<PublicPlaylistPage />} />
+        <Route path="*" element={<ErrorPage/>}/>
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;
