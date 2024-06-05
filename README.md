@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Movie Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+To run the Web Application on your local system, download Node.js from [here](https://nodejs.org/en/download/). This will give you access to the Node Package Manager (npm), which is essential to run the project.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+1. Open the terminal and type `npm install` to install all the dependencies.
+2. Run: `npm start`.
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+### 1. System Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Any system with a basic configuration.
+2. Operating System: Windows / Linux / Mac.
 
-### `npm run build`
+### 2. Software Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Updated browser.
+2. Node.js installed (If not, download it [here](https://nodejs.org/en/download/)).
+3. Any text editor of your choice.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. JavaScript
+2. Node.js
+3. ExpressJS
+4. MongoDB
+5. JWT for authentication
+6. OMDB API
+7. HTML, CSS, Bootstrap
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Dependencies
+1. **React**: A JavaScript library for building user interfaces.
+2. **Axios**: A promise-based HTTP client for the browser and Node.js.
+3. **React Bootstrap**: Bootstrap components built with React.
+4. **React Router DOM**: Declarative routing for React applications.
+5. **React Icons**: Popular icons as React components.
+6. **React Loader Spinner**: A collection of loaders/spinners for React.
+7. **bcryptjs**: A library to hash passwords.
+8. **cors**: A middleware to enable CORS.
+9. **jsonwebtoken**: A library to sign and verify JSON Web Tokens.
+10. **mongoose**: An ODM (Object Data Modeling) library for MongoDB and Node.js.
+11. **nodemon**: A tool that helps develop Node.js-based applications by automatically restarting the node application when file changes are detected.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Sign In and Sign Up authentication**: User authentication using JWT.
+2. **Built using MVC Architecture**: Follows the Model-View-Controller design pattern.
+3. **Movie Search**: Users can search for a movie by name and get details fetched from the OMDB API.
+4. **Playlist Management**:
+   - Users can add movies to a playlist (Public or Private).
+   - Public playlists can be shared with any other user or guest.
+   - Private playlists are visible only to the user after login.
+5. **Guest Access**: Users can search for movies and view details without signing in but cannot add movies to a playlist.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
