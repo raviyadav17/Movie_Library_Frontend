@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { decodeJWT } from "../../services/utils";
 import { getUserData } from "../../services/api";
 import "./ProfilePage.css";
+import Loading from "../../components/Loading/Loading";
 
 function ProfilePage() {
   const [userData, setUserData] = useState(null);
@@ -38,7 +39,7 @@ function ProfilePage() {
   }, [token, navigate]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div><Loading/></div>;
   }
 
   return (

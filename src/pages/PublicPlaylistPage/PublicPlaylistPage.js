@@ -4,6 +4,7 @@ import { getPublicPlaylist } from "../../services/api"; // Make sure the path is
 import MovieCard from "../../components/MovieCard/MovieCard";
 import "./PublicPlaylistPage.css";
 import { capitalizeKeys } from "../../services/utils";
+import Loading from "../../components/Loading/Loading";
 
 const PublicPlaylistPage = () => {
   const { userId } = useParams();
@@ -27,7 +28,7 @@ const PublicPlaylistPage = () => {
   }, [userId]);
 
   if (isLoading) {
-    return <div className="playlist-page">Loading...</div>;
+    return <div className="playlist-page"><Loading/></div>;
   }
 
   return (
