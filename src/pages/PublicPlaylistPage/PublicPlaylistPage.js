@@ -28,7 +28,7 @@ const PublicPlaylistPage = () => {
   }, [userId]);
 
   if (isLoading) {
-    return <div className="playlist-page"><Loading/></div>;
+    return <div className="loading-public"><Loading/></div>;
   }
 
   return (
